@@ -1,0 +1,11 @@
+import numpy as np
+
+a1_str=input()
+
+a1=np.array(a1_str.split(),dtype=int)
+
+missing_mask = np.isnan(a1.astype(float)) | (a1 == None)
+
+missing_values = a1[missing_mask]
+
+print(missing_values)
