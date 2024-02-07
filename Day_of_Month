@@ -1,0 +1,10 @@
+import pandas as pd
+
+year_month_series = pd.Series(['2023-01', '2023-02', '2023-03'])
+
+day_of_month = 15
+
+dates = pd.to_datetime(year_month_series + '-' + str(day_of_month), format='%Y-%m-%d')
+
+print(year_month_series)
+print(dates)
