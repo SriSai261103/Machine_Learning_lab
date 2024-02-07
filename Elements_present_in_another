@@ -1,0 +1,11 @@
+import numpy as np
+
+a1_str=input()
+a2_str=input()
+
+a1=np.array(a1_str.split(), dtype=int)
+a2=np.array(a2_str.split(), dtype=int)
+
+is_present=np.in1d(a1,a2)
+
+print(is_present)
