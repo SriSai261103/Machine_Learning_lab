@@ -1,0 +1,9 @@
+import pandas as pd
+
+l1 = pd.Series([1, 1, 1, 2, 2, 3, 4, 4, 4, 4, 4, 5, 5])
+
+most_frequent = l1.mode()[0]
+
+l1[l1 != most_frequent] = 'other'
+
+print(l1)
