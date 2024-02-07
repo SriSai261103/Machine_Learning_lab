@@ -1,0 +1,11 @@
+import pandas as pd
+
+l1 = pd.Series([10, 20, 30, 40, 50])
+
+threshold = 25
+
+subset = l1[l1 > threshold]
+
+print(l1)
+
+print(subset)
